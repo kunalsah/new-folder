@@ -1,0 +1,197 @@
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --global username
+error: key does not contain a section: username
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --global username "kunalsah"
+error: key does not contain a section: username
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --global user.name "kunalsah"
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ user.name
+bash: user.name: command not found
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --global user.email"kunalsahu.6841@gmail.com"
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=kunalsah
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --global user.email "kunalsahu.6841@gmail.com"
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=kunalsah
+user.email=kunalsahu.6841@gmail.com
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git --status
+unknown option: --status
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git --status
+unknown option: --status
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ code .
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git --status
+unknown option: --status
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git
+$ git init
+Initialized empty Git repository in C:/Users/mahen/OneDrive/Desktop/git/.git/
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git add .
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ ls
+'New folder'/   index.html
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git commit- m "my project"
+git: 'commit-' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git commit -m "my project"
+[master (root-commit) 1109248] my project
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git push -u origin master "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"
+error: src refspec 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 does not match any
+error: failed to push some refs to 'origin'
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ ls
+'New folder'/   index.html
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$  git remote add origin git remote add origin https://github.com/kunalsah/my-prroject.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git remote add origin https://github.com/kunalsah/new.git
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 411 bytes | 411.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kunalsah/new.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+mahi@ASUS MINGW64 ~/OneDrive/Desktop/git (master)
+$
